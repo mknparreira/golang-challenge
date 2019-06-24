@@ -1,14 +1,14 @@
 package tests
 
 import (
-	"testing"
-	"net/http"
 	"encoding/json"
+	"golang-challenge/endpoints"
+	"net/http"
 	"net/http/httptest"
-	"challenger/endpoints"
+	"testing"
 )
 
-func TestDisplayNumbers1To100(t *testing.T){
+func TestDisplayNumbers1To100(t *testing.T) {
 	request, _ := http.NewRequest("GET", "/challenger/api/v1", nil)
 
 	response := httptest.NewRecorder()
@@ -18,9 +18,9 @@ func TestDisplayNumbers1To100(t *testing.T){
 	var m interface{}
 	decoder := json.NewDecoder(response.Body)
 	decoder.Decode(&m)
-	
+
 	if m == nil {
 		t.Errorf("handler returned unexpected body: got %v",
-		response.Body.String())
+			response.Body.String())
 	}
 }

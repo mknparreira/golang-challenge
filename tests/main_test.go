@@ -1,13 +1,13 @@
 package tests
 
 import (
-	"testing"
+	"golang-challenge/endpoints"
 	"net/http"
 	"net/http/httptest"
-	"challenger/endpoints"
+	"testing"
 )
 
-func TestRouteIndexHandler(t *testing.T){
+func TestRouteIndexHandler(t *testing.T) {
 	request, err := http.NewRequest("GET", "/challenger/api/v1", nil)
 
 	if err != nil {
@@ -24,7 +24,7 @@ func TestRouteIndexHandler(t *testing.T){
 	}
 }
 
-func TestRouteRangeHandler(t *testing.T){
+func TestRouteRangeHandler(t *testing.T) {
 	request, err := http.NewRequest("GET", "/challenger/api/v1/from/1/to/5", nil)
 
 	if err != nil {
