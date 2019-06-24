@@ -42,9 +42,9 @@ Notice that negative numbers aren´t allowed.
 ```go
 godoc -http=:6060
 ```
-after that, go to the naviagator and open http://localhost:6060/pkg/challenger  
+after that, open a link: http://localhost:6060/pkg/challenger  
 
 * I used only one third party: (https://github.com/gorilla/mux) because I as my approach, code and implementation will be reviewed, therefore, I believe that it´s not goood to me, user multiple third party to solve the challenge.
 
-* Whatever doubts about the code, approachs or some implementations that I used, you can send email to me (mknparreira@gmail.com) or call me (913 628 671).
-* In spite of this position, I would like to say thanks for the opportunity. Opened a new world to me. Go lang is a wonderful language. I going to learn and improve much more. 
+* Any doubts about the code, approachs or some implementations that I used, you can send email to me (mknparreira@gmail.com) or call me (913 628 671).
+* In spite of this position, I would like to say thanks for the opportunity. Learn Go lang, opened a new world to me. Go lang is a wonderful language. I going to learn and improve much more. 
