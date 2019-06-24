@@ -16,6 +16,8 @@ the word 'Do' instead of the number. For multiples of both 3 and 5, print 'PéDo
 ### Installing
 You can generate a build of the project running the following code inside the challenger/main folder: 
 
+Don´t forget to run the command go get to bring dependencies. 
+
 ```
 go build main.go
 
